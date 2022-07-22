@@ -1,0 +1,54 @@
+.Toastify {
+  &__toast {
+    border-radius: 20px 10px 0 10px;
+    font-weight: 500;
+    padding: 10px 20px 10px;
+    color: #4c566f;
+
+    &-container {
+      position: absolute;
+      z-index: 1000;
+      min-width: 354px;
+
+      font-size: 16px;
+      right: 2em;
+      top: 4em;
+      @media screen and (max-width: 500px) {
+        width: 328px;
+        bottom: 18px;
+        right: 1rem;
+      }
+    }
+
+    &--error {
+      border-radius: 3px;
+      border: solid 1px #e7cecd;
+      background-color: #efdfdf;
+      color: #9f4f48;
+    }
+
+
+    &__close-button {
+      color: #ff3b62;
+    }
+
+    &--info {
+      background: #49526f;
+    }
+
+    &--success {
+      background: #e2eed8;
+      border-radius: 3px;
+      border: solid 1px #d5e6c7;
+
+      > div {
+        > div {
+          > svg {
+            display: none;
+          }
+        }
+      }
+
+    }
+  }
+}

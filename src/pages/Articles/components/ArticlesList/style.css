@@ -1,0 +1,10 @@
+.tab_wrapper {
+    width: 97%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ant-row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
